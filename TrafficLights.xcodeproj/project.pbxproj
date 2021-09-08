@@ -11,6 +11,8 @@
 		F949FCC726E69F6300B5C8EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949FCC626E69F6300B5C8EE /* ContentView.swift */; };
 		F949FCC926E69F6600B5C8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F949FCC826E69F6600B5C8EE /* Assets.xcassets */; };
 		F949FCCC26E69F6600B5C8EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F949FCCB26E69F6600B5C8EE /* Preview Assets.xcassets */; };
+		F949FCD426E7E92B00B5C8EE /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949FCD326E7E92B00B5C8EE /* ColorCircle.swift */; };
+		F949FCD826E7FE1600B5C8EE /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949FCD726E7FE1600B5C8EE /* NextButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F949FCC826E69F6600B5C8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F949FCCB26E69F6600B5C8EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F949FCCD26E69F6600B5C8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F949FCD326E7E92B00B5C8EE /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
+		F949FCD726E7FE1600B5C8EE /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				F949FCC426E69F6300B5C8EE /* TrafficLightsApp.swift */,
 				F949FCC626E69F6300B5C8EE /* ContentView.swift */,
+				F949FCD326E7E92B00B5C8EE /* ColorCircle.swift */,
+				F949FCD726E7FE1600B5C8EE /* NextButton.swift */,
 				F949FCC826E69F6600B5C8EE /* Assets.xcassets */,
 				F949FCCD26E69F6600B5C8EE /* Info.plist */,
 				F949FCCA26E69F6600B5C8EE /* Preview Content */,
@@ -140,6 +146,8 @@
 			files = (
 				F949FCC726E69F6300B5C8EE /* ContentView.swift in Sources */,
 				F949FCC526E69F6300B5C8EE /* TrafficLightsApp.swift in Sources */,
+				F949FCD826E7FE1600B5C8EE /* NextButton.swift in Sources */,
+				F949FCD426E7E92B00B5C8EE /* ColorCircle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
