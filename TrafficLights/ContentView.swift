@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var redLight = ColorCircle(brightness: 0.5, color: .red)
-    private let yellowLight = ColorCircle(brightness: 0.5, color: .yellow)
-    private let greenLight = ColorCircle(brightness: 0.5, color: .green)
+    @State private var redLight = 0.5
+    @State private var yellowLight = 0.5
+    @State private var greenLight = 0.5
     
     var body: some View {
         ZStack{
             Color.black
             VStack {
-                redLight
-                yellowLight
-                greenLight
+                ColorCircle(brightness: redLight, color: .red)
+                ColorCircle(brightness: yellowLight , color: .yellow)
+                ColorCircle(brightness: greenLight, color: .green)
                 Spacer()
                 NextButton {
-                
-                    
-                    
+                    if redLight == 0.5 && yellowLight == 0.5 {
+                        redLight = 1.0
+                        greenLight = 0.5
+                    } else if redLight == 1.0 {
+                        yellowLight = 1.0
+                        redLight = 0.5
+                    } else if yellowLight == 1 {
+                        greenLight = 1
+                        yellowLight = 0.5
+                    }
                 }
                 
             }.padding()

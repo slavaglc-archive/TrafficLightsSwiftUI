@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct ColorCircle: View {
-    @State var brightness: Double
+    let brightness: Double
     let color: Color
     
     var body: some View {
