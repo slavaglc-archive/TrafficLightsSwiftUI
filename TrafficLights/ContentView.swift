@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var redLight = 0.5
     @State private var yellowLight = 0.5
     @State private var greenLight = 0.5
+    @State private var text = "START"
     
     var body: some View {
         ZStack{
@@ -20,8 +21,9 @@ struct ContentView: View {
                 ColorCircle(brightness: yellowLight , color: .yellow)
                 ColorCircle(brightness: greenLight, color: .green)
                 Spacer()
-                NextButton {
+                NextButton(text: text) {
                     if redLight == 0.5 && yellowLight == 0.5 {
+                        text = "NEXT"
                         redLight = 1.0
                         greenLight = 0.5
                     } else if redLight == 1.0 {

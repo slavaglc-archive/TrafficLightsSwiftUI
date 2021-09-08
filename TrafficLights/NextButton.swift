@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct NextButton: View {
+    let text: String
     let completion: ()->()
     
     var body: some View {
 
-        Button("NEXT") {
+        Button(text) {
             completion()
         }.foregroundColor(.white)
         .frame(width: 100, height: 50, alignment: .center)
@@ -30,6 +31,6 @@ struct NextButton: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        NextButton(completion: {} )
+        NextButton(text: "START", completion: {} )
     }
 }
